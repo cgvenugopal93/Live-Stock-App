@@ -1,0 +1,69 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 16%;
+    border-radius: 5px;
+    float :left;
+    margin-right : 10px;
+    margin-bottom : 10px;
+    background: rgba(189, 189, 189, 0.32);
+}
+h1 {
+  font-family: 'Lobster', cursive;
+  font-weight: 500;
+  line-height: 1.1;
+  text-align: center;
+  color: #48ca3b;
+}
+.card:hover {
+    box-shadow: 0 10px 18px 0 rgba(0,0,0,0.2);
+}
+.container {
+    padding: 2px 16px;
+    text-align: center;
+}
+.pBottom{
+  padding-bottom: 10px;
+}
+.hide{
+  display:none;
+}
+.show{
+  display:block;
+}
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor:pointer;
+  border-radius: 5px;
+}
+.closebutton {
+  background-color: #d62e13;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor:pointer;
+  border-radius: 5px;
+}
+.graphbutton{
+  background-color: #248dd8;
+  border: none;
+  color: white;
+  padding: 10px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor:pointer;
+  border-radius: 5px;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Live Stock App</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="chart.js"></script>
+    <link rel="stylesheet" href="css/livestock.css">
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  </head>
+  <body>
+    <div><h1>Live Stock App</h1></div>
+    <p>
+      <button id="close" class="closebutton">Close Connection</button>
+      <button id="history" class='button'>Show History</button>
+    </p>
+    <ul class="hide" id="log"></ul>
+    <ul class="hide" id="chartlog"></ul>
+    <div class="hide" id="closeLog"> <b>Connection Closed!!!!! Refresh page to again start live stock</b></div>
+    <div id="tickerid-1" class="card">
+      <div class="container">
+        <h4 id="tickerName"><b>Apple</b></h4> 
+        <div id="curValue" class="pBottom"><b>Open</b> $<span>500.45</span></div>
+        <div id="newValue" class="pBottom"><b>Last</b> $<span>500.45</span></div>  
+        <div id="incValue">00.00</div>
+        <div id="percInc"class="pBottom">(00.00%)</div>
+        <div><strong>Last Trade</strong></div>
+        <div id="tradeTime" class="pBottom">00:00:00</div>
+        <div style="width:100%" id="showgraph-1" class="graphbutton">View Graph</div>
+      </div>
+    </div>
+    <div id="tickerid-2" class="card">
+      <div class="container">
+        <h4 id="tickerName"><b>Google</b></h4> 
+        <div id="curValue" class="pBottom"><b>Open</b> $<span>500.45</span></div> 
+        <div id="newValue" class="pBottom"><b>Last</b> $<span>500.45</span></div>
+        <div id="incValue">00.00</div>
+        <div id="percInc"class="pBottom">(00.00%)</div>
+        <div><strong>Last Trade</strong></div>
+        <div id="tradeTime" class="pBottom">00:00:00</div>
+        <div style="width:100%" id="showgraph-2" class="graphbutton">View Graph</div>
+      </div>
+    </div>
+    <div id="tickerid-3" class="card">
+      <div class="container">
+        <h4 id="tickerName"><b>Facebook</b></h4> 
+        <div id="curValue" class="pBottom"><b>Open</b> $<span>500.45</span></div> 
+        <div id="newValue" class="pBottom"><b>Last</b> $<span>500.45</span></div>
+        <div id="incValue">00.00</div>
+        <div id="percInc"class="pBottom">(00.00%)</div>
+        <div><strong>Last Trade</strong></div>
+        <div id="tradeTime" class="pBottom">00:00:00</div>
+        <div style="width:100%" id="showgraph-3" class="graphbutton">View Graph</div>
+      </div>
+    </div>
+    <div id="tickerid-4" class="card">
+      <div class="container">
+        <h4 id="tickerName"><b>Microsoft</b></h4> 
+        <div id="curValue" class="pBottom"><b>Open</b> $<span>500.45</span></div>
+        <div id="newValue" class="pBottom"><b>Last</b> $<span>500.45</span></div>
+        <div id="incValue">00.00</div>
+        <div id="percInc"class="pBottom">(00.00%)</div>
+        <div><strong>Last Trade</strong></div>
+        <div id="tradeTime" class="pBottom">00:00:00</div>
+        <div style="width:100%" id="showgraph-4" class="graphbutton">View Graph</div>
+      </div>
+    </div>
+    <div id="tickerid-5" class="card">
+      <div class="container">
+        <h4 id="tickerName"><b>Oracle</b></h4> 
+        <div id="curValue" class="pBottom"><b>Open</b> $<span>500.45</span></div> 
+        <div id="newValue" class="pBottom"><b>Last</b> $<span>500.45</span></div>
+        <div id="incValue">00.00</div>
+        <div id="percInc"class="pBottom">(00.00%)</div>
+        <div><strong>Last Trade</strong></div>
+        <div id="tradeTime" class="pBottom">00:00:00</div>
+        <div style="width:100%" id="showgraph-5" class="graphbutton">View Graph</div>
+      </div>
+    </div>
+    <div id="tickerid-6" class="card">
+      <div class="container">
+        <h4 id="tickerName"><b>Directi</b></h4> 
+        <div id="curValue" class="pBottom"><b>Open</b> $<span>500.45</span></div> 
+        <div id="newValue" class="pBottom"><b>Last</b> $<span>500.45</span></div>
+        <div id="incValue">00.00</div>
+        <div id="percInc"class="pBottom">(00.00%)</div>
+        <div><strong>Last Trade</strong></div>
+        <div id="tradeTime" class="pBottom">00:00:00</div>
+        <div style="width:100%" id="showgraph-6" class="graphbutton">View Graph</div>
+      </div>
+    </div>
+    <div id="tickerid-7" class="card">
+      <div class="container">
+        <h4 id="tickerName"><b>Zoho</b></h4> 
+        <div id="curValue" class="pBottom"><b>Open</b> $<span>500.45</span></div> 
+        <div id="newValue" class="pBottom"><b>Last</b> $<span>500.45</span></div>
+        <div id="incValue">00.00</div>
+        <div id="percInc"class="pBottom">(00.00%)</div>
+        <div><strong>Last Trade</strong></div>
+        <div id="tradeTime" class="pBottom">00:00:00</div>
+        <div style="width:100%" id="showgraph-7" class="graphbutton">View Graph</div>
+      </div>
+    </div>
+    <div id="tickerid-8" class="card">
+      <div class="container">
+        <h4 id="tickerName"><b>Amazon</b></h4> 
+        <div id="curValue" class="pBottom"><b>Open</b> $<span>500.45</span></div> 
+        <div id="newValue" class="pBottom"><b>Last</b> $<span>500.45</span></div>
+        <div id="incValue">00.00</div>
+        <div id="percInc"class="pBottom">(00.00%)</div>
+        <div><strong>Last Trade</strong></div>
+        <div id="tradeTime" class="pBottom">00:00:00</div>
+        <div style="width:100%" id="showgraph-8" class="graphbutton">View Graph</div>
+      </div>
+    </div>
+    <div id="tickerid-9" class="card">
+      <div class="container">
+        <h4 id="tickerName"><b>Flipkart</b></h4> 
+        <div id="curValue" class="pBottom"><b>Open</b> $<span>500.45</span></div>
+        <div id="newValue" class="pBottom"><b>Last</b> $<span>500.45</span></div> 
+        <div id="incValue">00.00</div>
+        <div id="percInc"class="pBottom">(00.00%)</div>
+        <div><strong>Last Trade</strong></div>
+        <div id="tradeTime" class="pBottom">00:00:00</div>
+        <div style="width:100%" id="showgraph-9" class="graphbutton">View Graph</div>
+      </div>
+    </div>
+    <div id="tickerid-10" class="card">
+      <div class="container">
+        <h4 id="tickerName"><b>Paytm</b></h4> 
+        <div id="curValue" class="pBottom"><b>Open</b> $<span>500.45</span></div>
+        <div id="newValue" class="pBottom"><b>Last</b> $<span>500.45</span></div> 
+        <div id="incValue">00.00</div>
+        <div id="percInc"class="pBottom">(00.00%)</div>
+        <div><strong>Last Trade</strong></div>
+        <div id="tradeTime" class="pBottom">00:00:00</div>
+        <div style="width:100%" id="showgraph-10" class="graphbutton">View Graph</div>
+      </div>
+    </div>
+    <div id="chartContainer" style="height: 400px; width: 100%;margin-top:600px;">
+    </div>
+    <script src="client.js"></script>
+
+  </body>
+</html>
