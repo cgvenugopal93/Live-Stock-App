@@ -1,5 +1,5 @@
 
-var socket = new WebSocket('ws://localhost:8081/');
+var socket = new WebSocket('ws://localhost:8084/');
 socket.onopen = function(event) {
   log('<b>Opened connection<b>');
 }
