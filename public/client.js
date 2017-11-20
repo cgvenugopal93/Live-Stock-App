@@ -1,5 +1,5 @@
 
-var socket = new WebSocket('ws://localhost:8084/');
+var socket = new WebSocket('ws://localhost:8085/');
 socket.onopen = function(event) {
   log('<b>Opened connection<b>');
 }
@@ -68,6 +68,7 @@ var chartlog = function(text) {
 }
 
 window.addEventListener('beforeunload', function() {
+  alert("gogo");
   socket.close();
 });
 
