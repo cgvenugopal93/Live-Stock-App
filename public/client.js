@@ -68,7 +68,6 @@ var chartlog = function(text) {
 }
 
 window.addEventListener('beforeunload', function() {
-  alert("gogo");
   socket.close();
 });
 
